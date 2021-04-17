@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+		  <meta charset="utf-8">
+		  <meta description="Paris Saint Germain - Bayern de Munich, Résumé complet du match du 13 Avril 2021">
+		  <title>Résumé du match PSG - Bayern</title>
+		  <link rel="stylesheet" href="style.css">
+		  <script src="script.js"></script>
+</head>
+
+<body>
+
+
+	<!-- fonction 1,2 Animation de mon menu en JS-->
+	<!-- fonction 3 Animation de ma select box pour conditionner le text a afficher-->
+	<script>
+
+	function ColorMenu(x) {
+	  x.style.color = "#B2B1B1";
+	  x.style.padding = "15px";
+	}
+
+	function ResetColormenu(x) {
+	 x.style.color = "white";
+	 x.style.padding = "10px";
+	}
+
+
+
+								function TextVisible() {
+								  var x = document.getElementById("tf-select").value;
+								  document.getElementById("textTempsFort").innerHTML = "Details du temps fort: " + x;
+								}
+
+
+				
+	</script>
+
+			<!-- Header du site web-->
+		<header>
+			<!-- Texte pré header Haut de page-->
+				<div id="content-text">
+					<p class="text-flashinfo"> 
+							<span class="flashinfo-mob">Paris se qualifie pour les demi-finales</span>
+					</p>
+				</div>
+
+				<!-- Bannière site web Haut de page-->
+				<div id="imgbanner-mob">
+					<img src="banner.png" class="banner" alt="Bannière PSG-Bayern">
+				</div>
+		
+			<hr />		
+
+<!-- Création du menu du site web avec ancres et animation CSS -->
+			
+			<nav>
+				<div id="list-nav-site">
+					<ul class="menu_list">
+						<li class="list_custom">
+							<a class="menu-link" href="#blocVideo" onmouseover="ColorMenu(this)" onmouseout="ResetColormenu(this)">Résumé Vidéo
+							</a>
+						</li>
+
+						<li class="list_custom">
+							<a class="menu-link" href="#blocStat" onmouseover="ColorMenu(this)" onmouseout="ResetColormenu(this)">Statistiques du match
+							</a>
+						</li>
+
+						<li  class="list_custom">
+							<a class="menu-link" href="#blocTempsF" onmouseover="ColorMenu(this)" onmouseout="ResetColormenu(this)">Les temps forts
+							</a>
+						</li>
+
+						<li class="list_custom">
+							<a class="menu-link" href="#hommeMatch" onmouseover="ColorMenu(this)" onmouseout="ResetColormenu(this)">L'Homme du Match
+							</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+
+	<hr />
+
+	<!-- Paragraphe résumé -->
+				<div id="text-sum-up">
+					<section>
+						<aside>
+	                <p ><span class="phrase_resume">Pour la deuxième année consécutive, le PSG jouera les demi-finales de la Ligue des Champions. 
+	                	<br> 
+	                	Le club parisien élimine le Bayern Munich, tenant du titre, malgré sa défaite au Parc des Princes (0-1).
+	                </span></p>
+	        	   </aside>
+	            </section>
+				</div>
+
+
+</header>
+
+
+		<section>
+				<aside>
+					<h2>Résumé du Match en images</h2>
+					<div class="slideshow-container">
+
+							<div class="mySlides fade">
+							  <div class="numbertext">1 / 6</div>
+							  <img src="image1.png" style="width:100%">
+							  <div class="text">1/4 de finale de Ligue des Champions : <br>PSG - Bayern Munich</div>
+							</div>
+
+							<div class="mySlides fade">
+							  <div class="numbertext">2 / 6</div>
+							  <img src="image2.png" style="width:100%">
+							  <div class="text">1/4 de finale de Ligue des Champions : <br>PSG - Bayern Munich</div>
+							</div>
+
+							<div class="mySlides fade">
+							  <div class="numbertext">3 / 6</div>
+							  <img src="image3.png" style="width:100%">
+							  <div class="text">1/4 de finale de Ligue des Champions : <br>PSG - Bayern Munich</div>
+							</div>
+
+							<div class="mySlides fade">
+							  <div class="numbertext">4 / 6</div>
+							  <img src="image4.png" style="width:100%">
+							  <div class="text">1/4 de finale de Ligue des Champions :<br> PSG - Bayern Munich</div>
+							</div>
+
+							<div class="mySlides fade">
+							  <div class="numbertext">5 / 6</div>
+							  <img src="image5.png" style="width:100%">
+							  <div class="text">1/4 de finale de Ligue des Champions : <br>PSG - Bayern Munich</div>
+							</div>
+
+							<div class="mySlides fade">
+							  <div class="numbertext">6 / 6</div>
+							  <img src="image6.png" style="width:100%">
+							  <div class="text">1/4 de finale de Ligue des Champions : <br> PSG - Bayern Munich</div>
+							</div>
+
+					</div>
+							<br>
+
+							<div style="text-align:center">
+							  <span class="dot"></span> 
+							  <span class="dot"></span> 
+							  <span class="dot"></span> 
+							  <span class="dot"></span> 
+							  <span class="dot"></span> 
+							  <span class="dot"></span> 
+							</div>
+			</aside>
+		</section>
+
+
+
+<!-- Sections : "Résumé vidéo" + "Statistiques" + "Les temps forts" + "Homme du match" -->
+		<section>
+			<article>
+							<h2 id="blocVideo" > Résumé Video</h2>
+
+							<!-- Intégration du player vidéo -->
+							<iframe width="500" height="380" src="https://www.youtube.com/embed/xueV0EVqbf0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+			</article>
+		</section>
+		<section>	
+			<article>
+							<h2 id="blocStat"> Statistiques</h2>
+
+
+								<!-- Génération du tableau de Statistiques-->
+								<table>
+									<tr>
+										<td>
+										</td>
+
+										<td style="font-weight:bold;">
+											PSG
+										</td>
+
+										<td style="font-weight:bold;">
+											Bayern
+										</td>
+									</tr>
+									<tr>
+										<td>
+											Possession
+										</td>
+
+										<td>
+											<span class="stat-psg">45 %</span>
+										</td>
+										<td>
+											<span class="stat-bm">55 %</span>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											Tirs
+										</td>
+
+										<td>
+											<span class="stat-psg">10</span>
+										</td>
+										<td>
+											<span class="stat-bm">14 </span>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											Tirs cadrés
+										</td>
+
+										<td>
+											<span class="stat-psg">3</span>
+										</td>
+										<td>
+											<span class="stat-bm">5 </span>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											Tirs non cadrés
+										</td>
+
+										<td>
+											<span class="stat-psg">6</span>
+										</td>
+										<td>
+											<span class="stat-bm">7%</span>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											xG
+										</td>
+
+										<td>
+											<span class="stat-psg">1.74</span>
+										</td>
+										<td>
+											<span class="stat-bm">1.56</span>
+										</td>
+									</tr>
+									</tr>
+									<tr>
+										<td>
+											Passes réussies
+										</td>
+
+										<td>
+											<span class="stat-psg">325</span>
+										</td>
+										<td>
+											<span class="stat-bm">406</span>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											Fautes
+										</td>
+
+										<td>
+											<span class="stat-psg">10</span>
+										</td>
+										<td>
+											<span class="stat-bm">21</span>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											Cartons jaunes
+										</td>
+
+										<td>
+											<span class="stat-psg">2</span>
+										</td>
+										<td>
+											<span class="stat-bm">2</span>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											Cartons rouges
+										</td>
+
+										<td>
+											<span class="stat-psg">0</span>
+										</td>
+										<td>
+											<span class="stat-bm">0</span>
+										</td>
+								</table>
+
+			</article>
+			</section>
+			
+			<section>
+			<article>
+							<h2 id="blocTempsF"> Les temps forts</h2>
+								
+								<!-- Génération de la select box avec application de la valeur sur demande-->
+									<select id="tf-select" onchange="TextVisible()">
+									    <option value="">-- Selectionnez un temps fort --</option>
+									    <option value="Face au jeu, Neymar lance Mbappé dans la profondeur mais sa frappe du droit est trop croisée. Il était de toute façon hors-jeu.">2' - Mbappé le premier frisson !</option>
+									    <option value="Au tour du milieu allemand de s’essayer depuis l’extérieur de la surface. Heureusement pour Paris, la frappe de Kimmich passe à côté du poteau droit de Navas !">26' - Oh Kimmich !</option>
+									    <option value="Superbe action parisienne. Mbappé est lancé sur la gauche de la surface. Si tout le monde s’attendait à la frappe croisée, le génie français remet astucieusement au point de penalty pour Neymar qui était seul. Mais sa frappe du droit est magnifiquement sortie par Neuer qui avait tout vu en avance… Le match s’emballe !">27' - Neuer devant Neymar !</option>
+									    <option value="Omniprésent à la récupération, Gueye récupère un excellent ballon à 25 mètres des buts et transmet à Neymar à l’entrée de la surface. Passements de jambes, coup de rein sur Hernandez, le Brésilien fait la totale au défenseur munichois mais derrière, sa frappe du gauche est stoppée par Neuer.">33' - Neuer encore devant Neymar !</option>
+									    <option value="Oh la feinte de frappe destructrice de Neymar qui enrhume la défense bavaroise.. Derrière, à l’entrée de la surface, le Brésilien enroule du droit mais le ballon vient s’écraser sur la barre de Manuel Neuer… Le Brésilien fait le show dans cette première période !">37' - LA BARRE POUR NEYMAR</option>
+									    <option value="Kylian Mbappé met sur orbite Neymar qui se présente seul face à Neuer, mais son pointu du droit vient heurter le poteau gauche du portier bavarois…">39' - LE POTEAU POUR NEYMAR</option>
+									     <option value="Que c’est cruel pour le PSG. Sur une frappe repoussée par Navas, l’ancien du PSG vient croquer Kimpembe dans le duel et tromper le portier parisien à bout portant…. C’est pas possible !">40' - CHOUPO-MOTINGGGGGGGG</option>
+									     <option value="Quelle remontée de Boateng pour mettre l’attaquant parisien hors-jeu !">78' - MBAPPÉ LE BUT...HORS JEU !</option>
+									     <option value="C'est officiel, le PSG affrontera Manchester City en demi-finales de la League des Champions.">90+4' - FIN DU MATCH - PSG VAINQUEUR</option>
+
+
+									</select>
+
+									<br>
+
+									<!-- Affichage du texte conditionné à la select box -->
+									<p id="textTempsFort"></p>
+			</article>
+			</section>
+
+
+			<!-- Affichage du gif Homme du Match -->
+			<section>
+				<article>
+							<h2 id="hommeMatch"> L'homme du Match</h2>
+							<img src="neymarjr.gif" class="neymargif" alt="photo de neymar">
+				</article>
+			</section>
+		
+		
+
+	<!-- Footer avec liens vers les sites des deux équipes -->
+			<footer>
+				<ul class="footer_list">
+					
+					<li class="footer-li">
+						<a class="footer_link" href="https://psg.fr" > ->  &nbsp;&nbsp; Suivre l'actualité du Paris Saint-Germain </a>
+					</li>
+					
+					<li>
+						<a class="footer_link" href="https://fcbayern.com/" > ->  &nbsp;&nbsp; Suivre l'actualité du Bayern de Munich  </a>
+					</li>
+					
+				</ul>
+			</footer>
+
+</article>
+	 </section>
+
+	 			<!--Script carroussel executable une fois l'ensemble des éléments chargés-->
+				 <script>
+						var slideIndex = 0;
+						showSlides();
+
+						function showSlides() {
+						  var i;
+						  var slides = document.getElementsByClassName("mySlides");
+						  var dots = document.getElementsByClassName("dot");
+						  for (i = 0; i < slides.length; i++) {
+						    slides[i].style.display = "none";  
+						  }
+
+						  slideIndex++;
+						  if (slideIndex > slides.length) {slideIndex = 1}    
+						  for (i = 0; i < dots.length; i++) {
+						    dots[i].className = dots[i].className.replace(" active", "");
+						  }
+
+						  slides[slideIndex-1].style.display = "block";  
+						  dots[slideIndex-1].className += " active";
+						  setTimeout(showSlides, 3000); // Change image every 2 seconds
+						}
+			</script>
+	  
+</body>
+</html>
